@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6ebef;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald',sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+.head-navigation{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 50;
+}
+.head-navigation .nav{
+    width: 350px;
+    height: 100%;
+    margin-right: 50px;
+}
+.head-navigation .nav .nav-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list a{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-list a:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/********************DESCRIPTION********************/
+.wrapper{
+    position: absolute;
+    bottom:0px;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.description{
+    height: 100%;
+    width: 70%;
+
+}
+.title{
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'Oswald', cursive;
+    font-weight: 200;
+    letter-spacing: 5px;
+    
+}
+.description-content{
+    font-family: 'Comfortaa', sans-serif;
+    width: 70%;
+    border-right: cornflowerblue 2px dashed;
+    margin-top: 10%;
+    padding-right: 5px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+/********************C O N T E N T********************/
+/*****************Notepad*****************/
+.wrapper-conteiner{
+    width: 100%;
+    position: relative;
+
+}
+.container{
+    width: 70%;
+    margin-left: 15%;
+    position: relative;
+}
+.notepad-container{
+    margin-top: 5%;
+    height: 730px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.notepad{
+    width: 90%;
+    height: 580px;
+    float: right;
+    background: #f2f2f2;
+    box-shadow: -20px 30px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0 20px 20px 0;
+    display: grid;
+    grid-template: repeat(7,1fr)/40px 1fr 190px 1fr 30px 90px;
+    
+}
+.notepad .rightImg{
+    height: 100%;
+    width: 100%;
+    grid-row-start:1;
+    grid-row-end: 8;
+    grid-column: 6;
+    border-radius: 0 20px 20px 0;
+}
+.notepad .Girl{
+    width: 100%;
+    height: 100%;
+    grid-row-start:3;
+    grid-row-end: 7;
+    grid-column: 3;
+}
+#serv1{
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+}
+#serv2{
+    grid-row: 4;
+    grid-column: 2;
+    text-align: center;
+}
+#serv3{
+    grid-row: 6;
+    grid-column: 2;
+    text-align: center;
+}
+#serv4{
+    grid-row: 2;
+    grid-column: 4;
+    text-align: center;
+}
+#serv5{
+    grid-row: 4;
+    grid-column: 4;
+    text-align: center;
+}
+#serv6{
+    grid-row: 6;
+    grid-column: 4;
+    text-align: center;
+}
+.Services{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.Services p {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TitleServices{
+    width: 100%;
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Oswald', cursive;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    line-height: 25px;
+    cursor: pointer;
+}
+.TitleServices .Content1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.TitleServices .Content2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnServices{
+    float: right;
+    margin-top: 50px;
+    margin-right: 5%;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    background:rgb(42, 144, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 0.3em;
+
+}
+.btnServices:hover{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.line{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.6);
+}
+/*****************About*****************/
+.about{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.about .title{
+    width: 200px;
+    font-size: 4rem;
+    font-family: 'Oswald', cursive;
+    letter-spacing: 3px;
+}
+.about .content{
+    font-size: 2rem;
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 100px;
+    text-align: justify;
+}
