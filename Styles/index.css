@@ -290,7 +290,7 @@
         font-size: 2rem !important;
     }
 }
-@media (max-width:397px){
+@media (max-width:402px){
     .service{
         width: 200px;
     }
