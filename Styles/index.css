@@ -211,9 +211,6 @@
     .description-title{
         font-size: 3.5rem !important;
     }
-    .titleService{
-        font-size: 1rem;
-    }
     .titleService h2{
         text-align: center;
     }
@@ -248,6 +245,9 @@
 @media (max-width:606px){
     .background-description .description-content{
         display: none;
+    }
+    .titleService{
+        font-size: 1rem;
     }
     .service{
         margin-left: 0px;
