@@ -253,6 +253,7 @@
     }
     .service{
         margin-left: 0px;
+        height:110px;
     }
     .services{
         justify-content: center;
