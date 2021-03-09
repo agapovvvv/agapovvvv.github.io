@@ -37,7 +37,7 @@
 }
 /*****************S E R V I C E S*****************/
 .containerServices{
-    background: url('../Image/Trenajer-3606.jpg');
+    background:linear-gradient(5deg, rgb(73, 221, 216) 0%, rgb(51, 105, 231) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 4.23655px 4.23655px rgba(0, 0, 0, 0.75);
