@@ -1,0 +1,319 @@
+.background-description{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+.imgText{
+    position: absolute;
+    width: 70%;
+}
+.imgText .description-title{
+    width: 100%;
+    font-size: 7rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.imgText .description-content{
+    width: 60%;
+    margin-left: 10%;
+    padding-right: 10px;
+    font-size: 1.3rem;
+    font-family: 'Exo 2', sans-serif;
+    border-right: rgba(65, 188, 225,0.8) dashed 3px;
+    margin-top: 5%; 
+}
+.mouse{
+    position: absolute;
+    width: 30px;
+    margin-top: 38%;
+    transition: 0.2s ease;
+}
+.opacity{
+    opacity: 0;
+}
+/*****************S E R V I C E S*****************/
+.containerServices{
+    background:linear-gradient(25deg, rgb(73, 221, 216) 0%, rgb(51, 105, 231) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4.23655px 4.23655px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+.titleService{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color:whitesmoke;
+    letter-spacing: 0.18rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.titleService h2{
+    width: 500px;
+    text-align: end;
+    padding: 30px 0 20px 0;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.services a{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.service{
+    width: 265px;
+    height: 210px;
+    background: rgba(145, 228, 239, 0.8);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.service:hover{
+    background: rgb(118, 184, 194);
+    width: 280px;
+    height: 210px;                             
+}
+.serviceImg{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textService{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.textService p{
+    height: 100%;
+    width: 95%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+.containerBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+/***************** A B O U T *****************/
+.ContainerAbout{
+    width: 100%;
+}
+.aboutTitle{
+    display: flex;
+    justify-content: center;
+}
+.aboutTitle h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #1f3538;
+    letter-spacing: 0.18rem;
+}
+.aboutText{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #504C4C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/***************** L E F T R I G H T C O N T E N T *****************/
+.ContainerLR{
+    width: 100%;
+    background: #CAE9FF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+.containerImg{
+    width: 300px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentLR{
+    width: 700px;
+    height: 80%;
+}
+.titleContent{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.contentText{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 80%;
+    text-align: justify;
+}
+.contentText p{
+    font-family: 'Rubik', sans-serif;
+}
+/*****************M E D I A *****************/
+@media (max-width:1680px){
+    .contentLR{
+        width: 600px;
+    }
+    #LR{
+        width: 70%;
+    }
+}
+@media (max-width:1367px){
+    .titleService{
+        font-size: 1.5rem;
+    }
+    .titleContent{
+        text-align: center;
+    }
+    .contentText{
+        display: flex;
+        justify-content: center;
+    }
+    #about{
+        width: 75%;
+    }
+    .contentLR{
+        width: 450px;
+    }
+}
+@media (max-width:1070px){
+    .contentLR{
+        width: 900px;
+    }
+    .contentText{
+        margin-left: 40px;
+    }
+    .mouse{
+        display: none;
+    }
+}
+@media (max-width:1025px){
+    .background-description{
+        height: 50vh;
+    }
+    .description-title{
+        font-size: 3.5rem !important;
+    }
+    .titleService h2{
+        text-align: center;
+    }
+    .service{
+        width: 250px;
+    }
+    .service:no{
+        
+    }
+    .services{
+        justify-content: center;
+    }
+    #about{
+        width: 85%;
+    }
+}
+@media (max-width:750px){
+    .titleService{
+        font-size: 1rem;
+    }
+    .service{
+        width: 125px;
+        height: 100px;
+    }
+    .serviceImg img{
+        height: 35px;
+    }
+    .textService p{
+        font-size: 0.67rem;
+    }
+    #LR{
+        width: 85%;
+    }
+}
+@media (max-width:590px){
+    .background-description .description-content{
+        display: none;
+    }
+    .service{
+        margin-left: 0px;
+        height: 120px;
+    }
+    .services{
+        justify-content: center;
+    }
+    .aboutText{
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+    #about{
+        width: 90%;
+    }
+    #UplineAbout{
+        height: 10px;
+    }
+    .contentText{
+        font-size: 1rem;
+        margin: 0;
+        width: 95%;
+    }
+}
+@media (max-width:450px){
+    .imgText{
+        margin-top: 50px;
+    }
+    .background-description{
+        height: 30vh;
+    }
+    
+    .description-title{
+        font-size: 2rem !important;
+    }
+}
+@media (max-width:374px){
+    .service{
+        width: 200px;
+        
+    }
+    .contentText{
+        padding: 0 5px;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (orientation: landscape){
+    .background-description{
+        height: 100vh;
+    }
+    .services{
+        justify-content: center;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:659px){
+    .background-description .description-content{
+        display: none;
+    }
+}
